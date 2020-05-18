@@ -37,13 +37,13 @@
             <type>jar</type>
         </dependency>
         
-        <!--        2.3. Spring security-->
+<!--                2.3. Spring security
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+        </dependency>-->
         
-        <!--        2.4. Spring bôt thymeleaf template engine-->
+        <!--        2.4. Spring boot thymeleaf template engine-->
         <!--        2.4.1. Using thymeleaf for front-end-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -74,24 +74,24 @@
             <optional>true</optional>
         </dependency>
         
-        <!--        2.7. Add cache-->
+<!--                2.7. Add cache
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
-        <!--         Add redis-->
+                 Add redis
         <dependency>
             <groupId>org.springframework.session</groupId>
             <artifactId>spring-session-data-redis</artifactId>
         </dependency>
         
-        <!--        Improve cache speed-->
-        <!--        https://github.com/redisson/redisson/wiki/2.-Configuration-->
+                Improve cache speed
+                https://github.com/redisson/redisson/wiki/2.-Configuration
         <dependency>
             <groupId>org.redisson</groupId>
             <artifactId>redisson-spring-boot-starter</artifactId>
             <version>3.11.1</version>
-        </dependency>
+        </dependency>-->
         
         <!--         2.8        Add Log4j2 Dependency -->
         <dependency>
@@ -120,6 +120,18 @@
             <artifactId>json</artifactId>
             <version>20180813</version>
             <type>jar</type>
+        </dependency>
+        
+        <!--        2.10. Apache Lang | Exception Utils-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
         </dependency>
         
     </dependencies>
@@ -155,7 +167,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <fork>true</fork>
-                    <mainClass>com.faber.main.Main</mainClass>
+                    <mainClass>com.base.main.Main</mainClass>
                 </configuration>
                 <executions>
                     <execution>
